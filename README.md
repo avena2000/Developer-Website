@@ -1,6 +1,6 @@
 # Mi Portafolio
 
-Este es un proyecto de HTML y CSS que muestra mis habilidades como desarrollador web. En este sitio, podrás ver algunos de los proyectos que he realizado, así como mi información de contacto y mi currículum.
+Este es un proyecto de HTML y CSS que muestra mis habilidades como desarrollador web. En este sitio, podrás ver algunas de las habilidades con las que cuento, así como mi información de contacto.
 
 ## Tecnologías utilizadas
 
@@ -8,9 +8,7 @@ Para crear este sitio, he utilizado las siguientes tecnologías:
 
 - HTML5: el lenguaje de marcado que define la estructura y el contenido del sitio.
 - CSS3: el lenguaje de estilo que define la apariencia y el diseño del sitio.
-- Bootstrap: un framework de CSS que facilita la creación de sitios responsivos y adaptables a diferentes dispositivos.
-- Font Awesome: una librería de iconos que se pueden usar en el sitio.
-
+  
 ## Estructura del sitio
 
 El sitio consta de las siguientes secciones:
@@ -22,7 +20,7 @@ El sitio consta de las siguientes secciones:
 
 ## Cómo ejecutar el proyecto
 
-Para ejecutar el proyecto, solo necesitas descargar los archivos del repositorio y abrir el archivo index.html en tu navegador. También puedes ver el sitio en línea en este [enlace].
+Para ejecutar el proyecto, solo necesitas descargar los archivos del repositorio y abrir el archivo index.html en tu navegador. También puedes ver el sitio en línea en este enlace: https://avena2000.github.io/Developer-Website/.
 
 ## Licencia
 
