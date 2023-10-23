@@ -1,0 +1,36 @@
+:root {
+  --blanco: #ffffff;
+  --oscuro: #ffffff;
+  --primario: #ffffff;
+  --secundario: #218114;
+  --gris: #757575;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Krub', sans-serif;
+}
+
+body {
+  font-size: 16px;
+  text-align: center;
+}
+
+.titulo {
+  text-align: center;
+  font-size: 3.8rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.barra {
+  background-color: #218114;
+  padding: 10px 10px;
+}
+
+.barra a {
+  margin-left: 100px;
+  margin-right: 100px; /* Ajusta el valor según tus necesidades para aumentar el margen entre opciones */
+  display:inline-block;
+  text-decoration: none; /* Elimina el subrayado de los enlaces */
+  color: white; /* Cambia el color del texto a blanco o el que prefieras */
+}
