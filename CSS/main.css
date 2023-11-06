@@ -1,8 +1,8 @@
 :root {
   --blanco: #ffffff;
-  --oscuro: #ffffff;
-  --primario: #ffffff;
-  --secundario: #218114;
+  --oscuro: #212121;
+  --primario: #218114;
+  --secundario: #741481;
   --gris: #757575;
 }
 
@@ -18,12 +18,15 @@ body {
 
 .titulo {
   text-align: center;
-  font-size: 3.8rem;
-  font-family: Arial, Helvetica, sans-serif;
+  /*font-size: 3.8rem;
+  font-family: Arial, Helvetica, sans-serif;*/
+}
+.titulo span {
+  font-size: 2rem;
 }
 
 .contenedor {
-  width: 120rem;
+  max-width: 120rem;
   /* margin-top: 0px;
   margin-right: auto;
   margin-left: auto;
@@ -31,17 +34,31 @@ body {
   margin: 0 auto;
 }
 
-.barra {
-  padding: 10px 10px;
-}
 .nav-bg {
   background-color: var(--secundario);
 }
 
+.barra {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
 .barra a {
-  margin-left: 100px;
-  margin-right: 100px; /* Ajusta el valor según tus necesidades para aumentar el margen entre opciones */
-  display:inline-block;
+  padding: 1rem;
   text-decoration: none; /* Elimina el subrayado de los enlaces */
   color: white; /* Cambia el color del texto a blanco o el que prefieras */
+}
+
+.barra a:hover{
+  background-color: var(--primario);
+  color: var(--oscuro);
+}
+
+@media (min-width: 768px) {
+ .barra{
+  flex-direction: row;
+ }
 }
