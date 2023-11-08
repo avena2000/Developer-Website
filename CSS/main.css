@@ -2,27 +2,47 @@
   --blanco: #ffffff;
   --oscuro: #212121;
   --primario: #218114;
+  --fade: #C8E0C4;
   --secundario: #741481;
   --gris: #757575;
 }
 
 html {
   font-size: 62.5%;
+  box-sizing: border-box;
   font-family: 'Krub', sans-serif;
 }
+*, *:before, *:after {
+  box-sizing: inherit;
+} 
 
 body {
   font-size: 16px;
   text-align: center;
 }
-
-.titulo {
-  text-align: center;
-  /*font-size: 3.8rem;
-  font-family: Arial, Helvetica, sans-serif;*/
+/* Tipografías */
+h1 {
+  font-size: 3.8rem;
 }
-.titulo span {
-  font-size: 2rem;
+h2 {
+  font-size: 2.8rem;
+}
+h3 {
+  font-size: 1.8 rem;
+}
+h1,h2,h3 {
+  text-align: center;
+}
+/* FIN */
+
+h1.titulo{
+  margin: 0;
+  padding-top: 20px;
+}
+.titulo img{
+  text-align: center;
+  max-width: 100%;
+  height: auto;
 }
 
 .contenedor {
@@ -35,7 +55,12 @@ body {
 }
 
 .nav-bg {
+  position: relative;
+  z-index: 1;
   background-color: var(--secundario);
+  box-shadow: 0px 0px 24px 9px rgba(0,0,0,0.5);
+  -webkit-box-shadow: 0px 0px 24px 9px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0px 0px 24px 9px rgba(0,0,0,0.5);
 }
 
 .barra {
@@ -56,9 +81,54 @@ body {
   background-color: var(--primario);
   color: var(--oscuro);
 }
-
+/* Snippet */
 @media (min-width: 768px) {
  .barra{
   flex-direction: row;
  }
+ .boton {
+  width:auto;
+ }
+}
+@media (max-width: 767px) {
+  .boton {
+    width: 90%;
+   }
+}
+/* Hero */
+.hero {
+  background-image: url(../IMG/hero.png); 
+  /* .. es para regresar en el directorio */
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 450px; /* Alto del Elemento */
+  position: relative; /* El padre debe ser relative*/
+}
+.contenido-hero {
+  position: absolute; /* El hijo debe ser absoluto */
+  background-color: rgba(0,0,0,.7);
+  width: 100%;
+  height: 100%;
+  /*Alinear vertical y horizontalmente */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.contenido-hero h2, .contenido-hero p {
+  color: var(--blanco);
+}
+.ubicacion {
+  display: flex;
+  align-items: flex-end;
+}
+.boton {
+  background-color: var(--secundario); /* color */
+  text-decoration: none; /* decoración */
+  color: var(--blanco); /* color de letra */
+  padding: 1rem 3rem; /* relleno */
+  border-radius: .5rem; /* radio del borde para redondear */
+  font-size: 2rem; /* tamaño de letra */
+  font-weight: bold; /* negritas */
+  text-transform: uppercase; /* convertir letra a mayúsculas */
 }
