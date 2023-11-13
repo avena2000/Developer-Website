@@ -5,12 +5,13 @@
   --fade: #C8E0C4;
   --secundario: #741481;
   --gris: #757575;
+  --grisClaro: #DFE9F3;
 }
 
 html {
   font-size: 62.5%;
   box-sizing: border-box;
-  font-family: 'Krub', sans-serif;
+  background-image: linear-gradient(to top, var(--grisClaro) 0%, var(--blanco) 100%);
 }
 *, *:before, *:after {
   box-sizing: inherit;
@@ -19,6 +20,7 @@ html {
 body {
   font-size: 16px;
   text-align: center;
+  font-family: 'Krub', sans-serif;
 }
 /* Tipografías */
 h1 {
@@ -52,6 +54,17 @@ h1.titulo{
   margin-left: auto;
   margin-bottom: 0px; */
   margin: 0 auto;
+}
+
+.sombra {
+  /* sombra del elemento en el borde */
+  box-shadow: 0px 0px 15px 0px rgba(112,112,112,0.51);
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(112,112,112,0.51);
+  -moz-box-shadow: 0px 0px 15px 0px rgba(112,112,112,0.51);
+  background-color: var(--blanco);
+  padding: 2rem;
+  border-radius: 1rem; /* Redondeo de esquinas */
+  
 }
 
 .nav-bg {
@@ -103,6 +116,7 @@ h1.titulo{
   background-size: cover;
   height: 450px; /* Alto del Elemento */
   position: relative; /* El padre debe ser relative*/
+  margin-bottom: 2rem; /* Margen inferior para separar el contendio*/
 }
 .contenido-hero {
   position: absolute; /* El hijo debe ser absoluto */
@@ -121,7 +135,7 @@ h1.titulo{
 .ubicacion {
   display: flex;
   align-items: flex-end;
-}
+} 
 .boton {
   background-color: var(--secundario); /* color */
   text-decoration: none; /* decoración */
@@ -131,4 +145,35 @@ h1.titulo{
   font-size: 2rem; /* tamaño de letra */
   font-weight: bold; /* negritas */
   text-transform: uppercase; /* convertir letra a mayúsculas */
+}
+/* Servicios */
+
+@media (min-width: 768px) {
+  .servicios{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 1rem; /*Distancia entre columnas*/
+  }
+}
+.servicio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.servicio h3 {
+  color: var(--secundario);
+  font-weight: normal;
+}
+.servicio p {
+  line-height: 2; /*Interlineado*/
+  text-align: center; 
+}
+.servicio .iconos {
+  height: 15rem;
+  width: 15rem;
+  background-color: var(--primario);
+  border-radius: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
