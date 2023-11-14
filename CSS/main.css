@@ -12,7 +12,16 @@ html {
   font-size: 62.5%;
   box-sizing: border-box;
   background-image: linear-gradient(to top, var(--grisClaro) 0%, var(--blanco) 100%);
+  scroll-snap-type: y mandatory;
 }
+
+/*Scroll Snap*/
+
+.titulo, .servicios-heading, .contacto-heading {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
 *, *:before, *:after {
   box-sizing: inherit;
 } 
